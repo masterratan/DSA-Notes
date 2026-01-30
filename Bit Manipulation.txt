@@ -20,3 +20,12 @@ N ^ (1<<k)
 
 Remove the last set bit (rightmost)
 N & (N-1)
+
+Count Set Bits
+int cnt = 0;
+while(n > 1){
+    cnt += n&1;
+    n >>= 1;
+}
+if(n == 1) cnt++;
+return cnt;

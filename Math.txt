@@ -1,0 +1,2 @@
+1. To get no. of digits in a number 'N' we can do:
+log(N) + 1 {base is 10}
