@@ -15,3 +15,8 @@ void Union(int x, int y) {
         rank[x_parent]++;
     }
 }
+
+// Initialize:
+parent.resize(n);
+rank.resize(n, 1);
+for(int i = 0; i < n; i++) parent[i] = i;
