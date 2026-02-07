@@ -1,4 +1,6 @@
-// Kadane's Algorithm -> We maintain a running sum and reset it when it becomes negative, because a negative prefix can never contribute to a maximum subarray.
+// Kadane's Algorithm -> Maximum Subarray Sum
+// We maintain a running sum and reset it when it becomes negative, 
+// because a negative prefix can never contribute to a maximum subarray.
 
 class Solution {
 public:

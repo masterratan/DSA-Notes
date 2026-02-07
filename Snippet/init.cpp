@@ -23,10 +23,25 @@ int d[] = {0,1,0,-1,0};
 int dx[] = {0,1,1,1,0,-1,-1,-1};
 int dy[] = {1,1,0,-1,-1,-1,0,1};
 
+double power(double x, int n) {
+    long binForm = n;
+    if (binForm < 0) {
+        binForm *= -1;
+        x = 1 / x;
+    }
+    double ans = 1;
+    while (binForm > 0) {
+        if (binForm & 1) ans *= x;
+        x *= x;
+        binForm >>= 1;
+    }
+    return ans;
+}
+
 void solve() {
     
 
-    cout<<'\n';
+    cout << '\n';
 }
 
 int32_t main() {
