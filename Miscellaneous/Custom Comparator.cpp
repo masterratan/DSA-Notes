@@ -22,5 +22,3 @@ struct cmp{
 };
 
 priority_queue<ListNode*, vector<ListNode*>, cmp> pq;
-
-
